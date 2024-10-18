@@ -10,6 +10,7 @@
 #include <vector>
 #include "TokenType.hpp"
 #include "Token.h"
+#include <nlohmann/json.hpp>
 
 namespace CMM
 {
@@ -20,6 +21,8 @@ namespace CMM
 
 using std::string;
 using std::vector;
+using json = nlohmann::json;
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,6 +46,20 @@ public:
     // Constructor (With tokenPtr)
     explicit __AST(const __Token *tokenPtr);
 
+    json toJson() const {
+      json j;
+//      j["tokenType"] = static_cast<int>(__tokenType); // 假设你想将枚举类型转换为整数
+      j["tokenStr"] = __tokenStr;
+      j["lineNo"] = __lineNo;
+
+      // 转换子节点
+      for (const auto& subAST : __subList) {
+        if(subAST != nullptr){
+          j["subList"].push_back(subAST->toJson());
+        }
+      }
+      return j;
+    }
 
     // Destructor
     ~__AST();

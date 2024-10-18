@@ -433,7 +433,8 @@ __Token __LexicalAnalyzer::__nextToken(const char *&codePtr, int &lineNo)
                 throw runtime_error("Invalid __LexerStage value");
         }
     }
-
+//    cout << lineNo << " : tokenType: "  << static_cast<typename std::underlying_type<__TokenType>::type>(tokenType)
+//    <<" tokenStr: "<< tokenStr<<endl;
     return __Token(tokenType, tokenStr, lineNo);
 }
 
@@ -453,7 +454,6 @@ vector<__Token> __LexicalAnalyzer::__lexicalAnalysis() const
     getline(f, codeStr, '\0');
 
     auto codePtr = codeStr.c_str();
-
     for (auto tokenObj = __nextToken(codePtr, lineNo); /* See below */; tokenObj = __nextToken(codePtr, lineNo))
     {
         tokenList.push_back(tokenObj);

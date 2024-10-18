@@ -17,6 +17,9 @@
 #include "IO.h"
 #include "VM.h"
 #include "Constants.h"
+#include <nlohmann/json.hpp>
+
+using json = nlohmann::json;
 
 namespace CMM
 {
@@ -95,6 +98,9 @@ void Core::__generateCode() const
     {
         auto tokenList   = __LexicalAnalyzer(__cmmFilePath).__lexicalAnalysis();
         auto root        = __SyntaxAnalyzer(tokenList).__syntaxAnalysis();
+        auto j = root->toJson();
+//        cout << j.dump(4) << endl; // 美化输出 JSON
+
         auto symbolTable = __SemanticAnalyzer(root).__semanticAnalysis();
         auto codeList    = __CodeGenerator(root, symbolTable).__generateCode();
 
