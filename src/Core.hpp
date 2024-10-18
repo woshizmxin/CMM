@@ -102,12 +102,28 @@ void Core::__generateCode() const
 //        cout << j.dump(4) << endl; // 美化输出 JSON
 
         auto symbolTable = __SemanticAnalyzer(root).__semanticAnalysis();
+        printNestedMap(symbolTable);
+
         auto codeList    = __CodeGenerator(root, symbolTable).__generateCode();
 
         __IO::__outputInstruction(__outputFilePath, codeList);
 
         delete root;
     }
+}
+
+void Core::printNestedMap(unordered_map<string, unordered_map<string, pair<int, int>>>& nestedMap) const{
+  for (const auto& outerPair : nestedMap) {
+    const string& outerKey = outerPair.first;
+    const unordered_map<string, pair<int, int>>& innerMap = outerPair.second;
+
+    cout << "Outer Key: " << outerKey << endl;
+    for (const auto& innerPair : innerMap) {
+      const string& innerKey = innerPair.first;
+      const pair<int, int>& value = innerPair.second;
+      cout << "  Inner Key: " << innerKey << ", Value: (" << value.first << ", " << value.second << ")" << endl;
+    }
+  }
 }
 
 
