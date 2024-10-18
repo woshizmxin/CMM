@@ -22,7 +22,7 @@ all:
 
 debug:
 	mkdir -p ../bin
-	g++ -g -std=gnu++17 -Wall -o ../bin/CMM CMM.cpp  -lboost_program_options
+	g++ -g -std=gnu++17 -Wall -o ../bin/CMM CMM.cpp -L/opt/homebrew/opt/boost/lib  -lboost_program_options -I/opt/homebrew/opt/boost/include
 
 clean:
 	rm -f ../bin/CMM
