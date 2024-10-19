@@ -6,11 +6,13 @@
       "subList": [
         {
           "lineNo": 10,
-          "tokenStr": "int"
+          "tokenStr": "int",
+          "tokenType": "__Int"
         },
         {
           "lineNo": 10,
-          "tokenStr": "CalcGreatestCommonDivisor"
+          "tokenStr": "CalcGreatestCommonDivisor",
+          "tokenType": "__Id"
         },
         {
           "lineNo": 0,
@@ -20,35 +22,43 @@
               "subList": [
                 {
                   "lineNo": 10,
-                  "tokenStr": "int"
+                  "tokenStr": "int",
+                  "tokenType": "__Int"
                 },
                 {
                   "lineNo": 10,
-                  "tokenStr": "lhs"
+                  "tokenStr": "lhs",
+                  "tokenType": "__Id"
                 }
               ],
-              "tokenStr": "Param"
+              "tokenStr": "Param",
+              "tokenType": "__Param"
             },
             {
               "lineNo": 0,
               "subList": [
                 {
                   "lineNo": 10,
-                  "tokenStr": "int"
+                  "tokenStr": "int",
+                  "tokenType": "__Int"
                 },
                 {
                   "lineNo": 10,
-                  "tokenStr": "rhs"
+                  "tokenStr": "rhs",
+                  "tokenType": "__Id"
                 }
               ],
-              "tokenStr": "Param"
+              "tokenStr": "Param",
+              "tokenType": "__Param"
             }
           ],
-          "tokenStr": "ParamList"
+          "tokenStr": "ParamList",
+          "tokenType": "__ParamList"
         },
         {
           "lineNo": 0,
-          "tokenStr": "LocalDecl"
+          "tokenStr": "LocalDecl",
+          "tokenType": "__LocalDecl"
         },
         {
           "lineNo": 0,
@@ -73,20 +83,25 @@
                                   "subList": [
                                     {
                                       "lineNo": 12,
-                                      "tokenStr": "rhs"
+                                      "tokenStr": "rhs",
+                                      "tokenType": "__Id"
                                     }
                                   ],
-                                  "tokenStr": "Var"
+                                  "tokenStr": "Var",
+                                  "tokenType": "__Var"
                                 }
                               ],
-                              "tokenStr": "Term"
+                              "tokenStr": "Term",
+                              "tokenType": "__Term"
                             }
                           ],
-                          "tokenStr": "AddExpr"
+                          "tokenStr": "AddExpr",
+                          "tokenType": "__AddExpr"
                         },
                         {
                           "lineNo": 12,
-                          "tokenStr": "=="
+                          "tokenStr": "==",
+                          "tokenType": "__Equal"
                         },
                         {
                           "lineNo": 0,
@@ -96,19 +111,24 @@
                               "subList": [
                                 {
                                   "lineNo": 12,
-                                  "tokenStr": "0"
+                                  "tokenStr": "0",
+                                  "tokenType": "__Number"
                                 }
                               ],
-                              "tokenStr": "Term"
+                              "tokenStr": "Term",
+                              "tokenType": "__Term"
                             }
                           ],
-                          "tokenStr": "AddExpr"
+                          "tokenStr": "AddExpr",
+                          "tokenType": "__AddExpr"
                         }
                       ],
-                      "tokenStr": "SimpleExpr"
+                      "tokenStr": "SimpleExpr",
+                      "tokenType": "__SimpleExpr"
                     }
                   ],
-                  "tokenStr": "Expr"
+                  "tokenStr": "Expr",
+                  "tokenType": "__Expr"
                 },
                 {
                   "lineNo": 0,
@@ -133,28 +153,36 @@
                                           "subList": [
                                             {
                                               "lineNo": 14,
-                                              "tokenStr": "lhs"
+                                              "tokenStr": "lhs",
+                                              "tokenType": "__Id"
                                             }
                                           ],
-                                          "tokenStr": "Var"
+                                          "tokenStr": "Var",
+                                          "tokenType": "__Var"
                                         }
                                       ],
-                                      "tokenStr": "Term"
+                                      "tokenStr": "Term",
+                                      "tokenType": "__Term"
                                     }
                                   ],
-                                  "tokenStr": "AddExpr"
+                                  "tokenStr": "AddExpr",
+                                  "tokenType": "__AddExpr"
                                 }
                               ],
-                              "tokenStr": "SimpleExpr"
+                              "tokenStr": "SimpleExpr",
+                              "tokenType": "__SimpleExpr"
                             }
                           ],
-                          "tokenStr": "Expr"
+                          "tokenStr": "Expr",
+                          "tokenType": "__Expr"
                         }
                       ],
-                      "tokenStr": "ReturnStmt"
+                      "tokenStr": "ReturnStmt",
+                      "tokenType": "__ReturnStmt"
                     }
                   ],
-                  "tokenStr": "StmtList"
+                  "tokenStr": "StmtList",
+                  "tokenType": "__StmtList"
                 },
                 {
                   "lineNo": 0,
@@ -179,7 +207,8 @@
                                           "subList": [
                                             {
                                               "lineNo": 18,
-                                              "tokenStr": "CalcGreatestCommonDivisor"
+                                              "tokenStr": "CalcGreatestCommonDivisor",
+                                              "tokenType": "__Id"
                                             },
                                             {
                                               "lineNo": 0,
@@ -201,22 +230,28 @@
                                                                   "subList": [
                                                                     {
                                                                       "lineNo": 18,
-                                                                      "tokenStr": "rhs"
+                                                                      "tokenStr": "rhs",
+                                                                      "tokenType": "__Id"
                                                                     }
                                                                   ],
-                                                                  "tokenStr": "Var"
+                                                                  "tokenStr": "Var",
+                                                                  "tokenType": "__Var"
                                                                 }
                                                               ],
-                                                              "tokenStr": "Term"
+                                                              "tokenStr": "Term",
+                                                              "tokenType": "__Term"
                                                             }
                                                           ],
-                                                          "tokenStr": "AddExpr"
+                                                          "tokenStr": "AddExpr",
+                                                          "tokenType": "__AddExpr"
                                                         }
                                                       ],
-                                                      "tokenStr": "SimpleExpr"
+                                                      "tokenStr": "SimpleExpr",
+                                                      "tokenType": "__SimpleExpr"
                                                     }
                                                   ],
-                                                  "tokenStr": "Expr"
+                                                  "tokenStr": "Expr",
+                                                  "tokenType": "__Expr"
                                                 },
                                                 {
                                                   "lineNo": 0,
@@ -235,17 +270,21 @@
                                                                   "subList": [
                                                                     {
                                                                       "lineNo": 18,
-                                                                      "tokenStr": "lhs"
+                                                                      "tokenStr": "lhs",
+                                                                      "tokenType": "__Id"
                                                                     }
                                                                   ],
-                                                                  "tokenStr": "Var"
+                                                                  "tokenStr": "Var",
+                                                                  "tokenType": "__Var"
                                                                 }
                                                               ],
-                                                              "tokenStr": "Term"
+                                                              "tokenStr": "Term",
+                                                              "tokenType": "__Term"
                                                             },
                                                             {
                                                               "lineNo": 18,
-                                                              "tokenStr": "-"
+                                                              "tokenStr": "-",
+                                                              "tokenType": "__Minus"
                                                             },
                                                             {
                                                               "lineNo": 0,
@@ -255,94 +294,119 @@
                                                                   "subList": [
                                                                     {
                                                                       "lineNo": 18,
-                                                                      "tokenStr": "lhs"
+                                                                      "tokenStr": "lhs",
+                                                                      "tokenType": "__Id"
                                                                     }
                                                                   ],
-                                                                  "tokenStr": "Var"
+                                                                  "tokenStr": "Var",
+                                                                  "tokenType": "__Var"
                                                                 },
                                                                 {
                                                                   "lineNo": 18,
-                                                                  "tokenStr": "/"
+                                                                  "tokenStr": "/",
+                                                                  "tokenType": "__Divide"
                                                                 },
                                                                 {
                                                                   "lineNo": 0,
                                                                   "subList": [
                                                                     {
                                                                       "lineNo": 18,
-                                                                      "tokenStr": "rhs"
+                                                                      "tokenStr": "rhs",
+                                                                      "tokenType": "__Id"
                                                                     }
                                                                   ],
-                                                                  "tokenStr": "Var"
+                                                                  "tokenStr": "Var",
+                                                                  "tokenType": "__Var"
                                                                 },
                                                                 {
                                                                   "lineNo": 18,
-                                                                  "tokenStr": "*"
+                                                                  "tokenStr": "*",
+                                                                  "tokenType": "__Multiply"
                                                                 },
                                                                 {
                                                                   "lineNo": 0,
                                                                   "subList": [
                                                                     {
                                                                       "lineNo": 18,
-                                                                      "tokenStr": "rhs"
+                                                                      "tokenStr": "rhs",
+                                                                      "tokenType": "__Id"
                                                                     }
                                                                   ],
-                                                                  "tokenStr": "Var"
+                                                                  "tokenStr": "Var",
+                                                                  "tokenType": "__Var"
                                                                 }
                                                               ],
-                                                              "tokenStr": "Term"
+                                                              "tokenStr": "Term",
+                                                              "tokenType": "__Term"
                                                             }
                                                           ],
-                                                          "tokenStr": "AddExpr"
+                                                          "tokenStr": "AddExpr",
+                                                          "tokenType": "__AddExpr"
                                                         }
                                                       ],
-                                                      "tokenStr": "SimpleExpr"
+                                                      "tokenStr": "SimpleExpr",
+                                                      "tokenType": "__SimpleExpr"
                                                     }
                                                   ],
-                                                  "tokenStr": "Expr"
+                                                  "tokenStr": "Expr",
+                                                  "tokenType": "__Expr"
                                                 }
                                               ],
-                                              "tokenStr": "ArgList"
+                                              "tokenStr": "ArgList",
+                                              "tokenType": "__ArgList"
                                             }
                                           ],
-                                          "tokenStr": "Call"
+                                          "tokenStr": "Call",
+                                          "tokenType": "__Call"
                                         }
                                       ],
-                                      "tokenStr": "Term"
+                                      "tokenStr": "Term",
+                                      "tokenType": "__Term"
                                     }
                                   ],
-                                  "tokenStr": "AddExpr"
+                                  "tokenStr": "AddExpr",
+                                  "tokenType": "__AddExpr"
                                 }
                               ],
-                              "tokenStr": "SimpleExpr"
+                              "tokenStr": "SimpleExpr",
+                              "tokenType": "__SimpleExpr"
                             }
                           ],
-                          "tokenStr": "Expr"
+                          "tokenStr": "Expr",
+                          "tokenType": "__Expr"
                         }
                       ],
-                      "tokenStr": "ReturnStmt"
+                      "tokenStr": "ReturnStmt",
+                      "tokenType": "__ReturnStmt"
                     }
                   ],
-                  "tokenStr": "StmtList"
+                  "tokenStr": "StmtList",
+                  "tokenType": "__StmtList"
                 }
               ],
-              "tokenStr": "IfStmt"
+              "tokenStr": "IfStmt",
+              "tokenType": "__IfStmt"
             }
           ],
-          "tokenStr": "StmtList"
+          "tokenStr": "StmtList",
+          "tokenType": "__StmtList"
         }
       ],
-      "tokenStr": "FuncDecl"
+      "tokenStr": "FuncDecl",
+      "tokenType": "__FuncDecl"
     },
     {
       "lineNo": 0,
       "subList": [
         {
           "lineNo": 27,
-          "tokenStr": "int"
+          "tokenStr": "int",
+          "tokenType": "__Int"
         },
         {
           "lineNo": 27,
-          "tokenStr": "main"
+          "tokenStr": "main",
+          "tokenType": "__Id"
         },
         {
           "lineNo": 0,
@@ -352,31 +416,38 @@
               "subList": [
                 {
                   "lineNo": 29,
-                  "tokenStr": "int"
+                  "tokenStr": "int",
+                  "tokenType": "__Int"
                 },
                 {
                   "lineNo": 29,
-                  "tokenStr": "lhs"
+                  "tokenStr": "lhs",
+                  "tokenType": "__Id"
                 }
               ],
-              "tokenStr": "VarDecl"
+              "tokenStr": "VarDecl",
+              "tokenType": "__VarDecl"
             },
             {
               "lineNo": 0,
               "subList": [
                 {
                   "lineNo": 30,
-                  "tokenStr": "int"
+                  "tokenStr": "int",
+                  "tokenType": "__Int"
                 },
                 {
                   "lineNo": 30,
-                  "tokenStr": "rhs"
+                  "tokenStr": "rhs",
+                  "tokenType": "__Id"
                 }
               ],
-              "tokenStr": "VarDecl"
+              "tokenStr": "VarDecl",
+              "tokenType": "__VarDecl"
             }
           ],
-          "tokenStr": "LocalDecl"
+          "tokenStr": "LocalDecl",
+          "tokenType": "__LocalDecl"
         },
         {
           "lineNo": 0,
@@ -389,10 +460,12 @@
                   "subList": [
                     {
                       "lineNo": 32,
-                      "tokenStr": "lhs"
+                      "tokenStr": "lhs",
+                      "tokenType": "__Id"
                     }
                   ],
-                  "tokenStr": "Var"
+                  "tokenStr": "Var",
+                  "tokenType": "__Var"
                 },
                 {
                   "lineNo": 0,
@@ -411,25 +484,49 @@
                                   "subList": [
                                     {
                                       "lineNo": 32,
-                                      "tokenStr": "input"
+                                      "tokenStr": "input",
+                                      "tokenType": "__Id"
                                     }
                                   ],
-                                  "tokenStr": "Call"
+                                  "tokenStr": "Call",
+                                  "tokenType": "__Call"
                                 }
                               ],
-                              "tokenStr": "Term"
+                              "tokenStr": "Term",
+                              "tokenType": "__Term"
+                            },
+                            {
+                              "lineNo": 32,
+                              "tokenStr": "+",
+                              "tokenType": "__Plus"
+                            },
+                            {
+                              "lineNo": 0,
+                              "subList": [
+                                {
+                                  "lineNo": 32,
+                                  "tokenStr": "3",
+                                  "tokenType": "__Number"
+                                }
+                              ],
+                              "tokenStr": "Term",
+                              "tokenType": "__Term"
                             }
                           ],
-                          "tokenStr": "AddExpr"
+                          "tokenStr": "AddExpr",
+                          "tokenType": "__AddExpr"
                         }
                       ],
-                      "tokenStr": "SimpleExpr"
+                      "tokenStr": "SimpleExpr",
+                      "tokenType": "__SimpleExpr"
                     }
                   ],
-                  "tokenStr": "Expr"
+                  "tokenStr": "Expr",
+                  "tokenType": "__Expr"
                 }
               ],
-              "tokenStr": "Expr"
+              "tokenStr": "Expr",
+              "tokenType": "__Expr"
             },
             {
               "lineNo": 0,
@@ -439,10 +536,12 @@
                   "subList": [
                     {
                       "lineNo": 33,
-                      "tokenStr": "rhs"
+                      "tokenStr": "rhs",
+                      "tokenType": "__Id"
                     }
                   ],
-                  "tokenStr": "Var"
+                  "tokenStr": "Var",
+                  "tokenType": "__Var"
                 },
                 {
                   "lineNo": 0,
@@ -461,25 +560,32 @@
                                   "subList": [
                                     {
                                       "lineNo": 33,
-                                      "tokenStr": "input"
+                                      "tokenStr": "input",
+                                      "tokenType": "__Id"
                                     }
                                   ],
-                                  "tokenStr": "Call"
+                                  "tokenStr": "Call",
+                                  "tokenType": "__Call"
                                 }
                               ],
-                              "tokenStr": "Term"
+                              "tokenStr": "Term",
+                              "tokenType": "__Term"
                             }
                           ],
-                          "tokenStr": "AddExpr"
+                          "tokenStr": "AddExpr",
+                          "tokenType": "__AddExpr"
                         }
                       ],
-                      "tokenStr": "SimpleExpr"
+                      "tokenStr": "SimpleExpr",
+                      "tokenType": "__SimpleExpr"
                     }
                   ],
-                  "tokenStr": "Expr"
+                  "tokenStr": "Expr",
+                  "tokenType": "__Expr"
                 }
               ],
-              "tokenStr": "Expr"
+              "tokenStr": "Expr",
+              "tokenType": "__Expr"
             },
             {
               "lineNo": 0,
@@ -498,7 +604,8 @@
                               "subList": [
                                 {
                                   "lineNo": 35,
-                                  "tokenStr": "output"
+                                  "tokenStr": "output",
+                                  "tokenType": "__Id"
                                 },
                                 {
                                   "lineNo": 0,
@@ -520,7 +627,8 @@
                                                       "subList": [
                                                         {
                                                           "lineNo": 35,
-                                                          "tokenStr": "CalcGreatestCommonDivisor"
+                                                          "tokenStr": "CalcGreatestCommonDivisor",
+                                                          "tokenType": "__Id"
                                                         },
                                                         {
                                                           "lineNo": 0,
@@ -542,22 +650,28 @@
                                                                               "subList": [
                                                                                 {
                                                                                   "lineNo": 35,
-                                                                                  "tokenStr": "lhs"
+                                                                                  "tokenStr": "lhs",
+                                                                                  "tokenType": "__Id"
                                                                                 }
                                                                               ],
-                                                                              "tokenStr": "Var"
+                                                                              "tokenStr": "Var",
+                                                                              "tokenType": "__Var"
                                                                             }
                                                                           ],
-                                                                          "tokenStr": "Term"
+                                                                          "tokenStr": "Term",
+                                                                          "tokenType": "__Term"
                                                                         }
                                                                       ],
-                                                                      "tokenStr": "AddExpr"
+                                                                      "tokenStr": "AddExpr",
+                                                                      "tokenType": "__AddExpr"
                                                                     }
                                                                   ],
-                                                                  "tokenStr": "SimpleExpr"
+                                                                  "tokenStr": "SimpleExpr",
+                                                                  "tokenType": "__SimpleExpr"
                                                                 }
                                                               ],
-                                                              "tokenStr": "Expr"
+                                                              "tokenStr": "Expr",
+                                                              "tokenType": "__Expr"
                                                             },
                                                             {
                                                               "lineNo": 0,
@@ -576,65 +690,86 @@
                                                                               "subList": [
                                                                                 {
                                                                                   "lineNo": 35,
-                                                                                  "tokenStr": "rhs"
+                                                                                  "tokenStr": "rhs",
+                                                                                  "tokenType": "__Id"
                                                                                 }
                                                                               ],
-                                                                              "tokenStr": "Var"
+                                                                              "tokenStr": "Var",
+                                                                              "tokenType": "__Var"
                                                                             }
                                                                           ],
-                                                                          "tokenStr": "Term"
+                                                                          "tokenStr": "Term",
+                                                                          "tokenType": "__Term"
                                                                         }
                                                                       ],
-                                                                      "tokenStr": "AddExpr"
+                                                                      "tokenStr": "AddExpr",
+                                                                      "tokenType": "__AddExpr"
                                                                     }
                                                                   ],
-                                                                  "tokenStr": "SimpleExpr"
+                                                                  "tokenStr": "SimpleExpr",
+                                                                  "tokenType": "__SimpleExpr"
                                                                 }
                                                               ],
-                                                              "tokenStr": "Expr"
+                                                              "tokenStr": "Expr",
+                                                              "tokenType": "__Expr"
                                                             }
                                                           ],
-                                                          "tokenStr": "ArgList"
+                                                          "tokenStr": "ArgList",
+                                                          "tokenType": "__ArgList"
                                                         }
                                                       ],
-                                                      "tokenStr": "Call"
+                                                      "tokenStr": "Call",
+                                                      "tokenType": "__Call"
                                                     }
                                                   ],
-                                                  "tokenStr": "Term"
+                                                  "tokenStr": "Term",
+                                                  "tokenType": "__Term"
                                                 }
                                               ],
-                                              "tokenStr": "AddExpr"
+                                              "tokenStr": "AddExpr",
+                                              "tokenType": "__AddExpr"
                                             }
                                           ],
-                                          "tokenStr": "SimpleExpr"
+                                          "tokenStr": "SimpleExpr",
+                                          "tokenType": "__SimpleExpr"
                                         }
                                       ],
-                                      "tokenStr": "Expr"
+                                      "tokenStr": "Expr",
+                                      "tokenType": "__Expr"
                                     }
                                   ],
-                                  "tokenStr": "ArgList"
+                                  "tokenStr": "ArgList",
+                                  "tokenType": "__ArgList"
                                 }
                               ],
-                              "tokenStr": "Call"
+                              "tokenStr": "Call",
+                              "tokenType": "__Call"
                             }
                           ],
-                          "tokenStr": "Term"
+                          "tokenStr": "Term",
+                          "tokenType": "__Term"
                         }
                       ],
-                      "tokenStr": "AddExpr"
+                      "tokenStr": "AddExpr",
+                      "tokenType": "__AddExpr"
                     }
                   ],
-                  "tokenStr": "SimpleExpr"
+                  "tokenStr": "SimpleExpr",
+                  "tokenType": "__SimpleExpr"
                 }
               ],
-              "tokenStr": "Expr"
+              "tokenStr": "Expr",
+              "tokenType": "__Expr"
             }
           ],
-          "tokenStr": "StmtList"
+          "tokenStr": "StmtList",
+          "tokenType": "__StmtList"
         }
       ],
-      "tokenStr": "FuncDecl"
+      "tokenStr": "FuncDecl",
+      "tokenType": "__FuncDecl"
     }
   ],
-  "tokenStr": "Program"
+  "tokenStr": "Program",
+  "tokenType": "__Program"
 }

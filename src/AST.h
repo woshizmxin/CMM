@@ -48,7 +48,7 @@ public:
 
     json toJson() const {
       json j;
-//      j["tokenType"] = static_cast<int>(__tokenType); // 假设你想将枚举类型转换为整数
+      j["tokenType"] = tokenTypeToString(__tokenType); // 假设你想将枚举类型转换为整数
       j["tokenStr"] = __tokenStr;
       j["lineNo"] = __lineNo;
 

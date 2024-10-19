@@ -148,6 +148,8 @@ private:
 
     // Generate Code
     vector<pair<__Instruction, string>> __generateCode() const;
+
+    void printCodeMap(unordered_map<string, vector<pair<__Instruction, string>>> nestedMap) const;
 };
 
 

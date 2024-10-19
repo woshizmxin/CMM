@@ -15,6 +15,8 @@
 #include "AST.h"
 #include "Instruction.hpp"
 #include "TokenType.hpp"
+#include <iostream>
+
 
 namespace CMM
 {
@@ -30,6 +32,8 @@ using std::vector;
 using std::unordered_map;
 using std::pair;
 using std::runtime_error;
+using std::cout;
+using std::endl;
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1035,13 +1039,33 @@ void __CodeGenerator::__translateCall(vector<pair<__Instruction, string>> &codeL
 vector<pair<__Instruction, string>> __CodeGenerator::__generateCode() const
 {
     auto codeMap = __createCodeMap();
-
+    printCodeMap(codeMap);
     auto [codeList, funcJmpMap] = __mergeCodeMap(codeMap);
 
     __translateCall(codeList, funcJmpMap);
 
     return codeList;
 }
+
+void __CodeGenerator::printCodeMap(unordered_map<string, vector<pair<__Instruction, string>>> nestedMap) const{
+  for (const auto& outerPair : nestedMap) {
+    for (const auto& outerPair : nestedMap) {
+      const string& outerKey = outerPair.first;
+      const vector<pair<__Instruction, string>>& vec = outerPair.second;
+
+      cout << "Outer Key: " << outerKey << endl;
+      for (const auto& innerPair : vec) {
+        const __Instruction& instruction = innerPair.first;
+        const string& value = innerPair.second;
+        cout << "  Value: " << instructionToString(instruction) << ", Additional Info: " << value << endl;
+      }
+    }
+  }
+}
+
+
+
+
 
 
 }  // End namespace CMM

@@ -1,0 +1,7 @@
+Outer Key: CalcGreatestCommonDivisor
+  Inner Key: rhs, Value: (1, 0)
+  Inner Key: lhs, Value: (0, 0)
+Outer Key: main
+  Inner Key: rhs, Value: (1, 0)
+  Inner Key: lhs, Value: (0, 0)
+Outer Key: __GLOBAL__

@@ -102,7 +102,7 @@ void Core::__generateCode() const
 //        cout << j.dump(4) << endl; // 美化输出 JSON
 
         auto symbolTable = __SemanticAnalyzer(root).__semanticAnalysis();
-        printNestedMap(symbolTable);
+//        printNestedMap(symbolTable);
 
         auto codeList    = __CodeGenerator(root, symbolTable).__generateCode();
 

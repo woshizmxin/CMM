@@ -29,8 +29,8 @@ int main()
     int lhs;
     int rhs;
 
-    lhs = input();
-    rhs = input();
+    lhs = 5+3;
+    rhs = 6;
 
     output(CalcGreatestCommonDivisor(lhs, rhs));
 }
